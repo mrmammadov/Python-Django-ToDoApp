@@ -1,0 +1,11 @@
+{% extends 'tasks/base.html' %}
+{% block content %}
+
+<form action="" method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">Submit</button>
+    <a href="{% url 'home' %}">Home</a>
+</form>
+
+{% endblock content %}
